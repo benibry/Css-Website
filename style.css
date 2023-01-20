@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 1228px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.narrow-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 1008px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* hero section */
+
+header {
+    background: #1f2937;
+    margin-bottom: 20px;
+    padding-top: 1.5rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #f9faf9;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+nav ul li a:hover {
+    color: #f9faf8;
+    transition: .5s ease-in-out;
+}
+
+
+.header-container {
+    display: flex;
+    gap: 2rem;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+
+.header-content-left {
+    flex-basis: 50%;
+    display: grid;
+    align-content: space-between;
+
+}
+
+.header-content-left h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+.header-content-left p{
+    font-size: 1.125rem;
+    color:#e5e7eb;
+    margin-bottom: 1.5rem;
+}
+.header-content-right {
+    flex-basis: 50%;
+    display: flex;
+}
+.header-content-right img {
+    align-self: center;
+    max-width: 100%;
+    overflow: auto;
+
+}
+.btn {
+    background-color: #3882f6;
+    color: whitesmoke;
+    padding: 8px 16px;
+    /* margin-top: 3.25rem; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    justify-self: flex-start;
+
+}
+
+
+
+
+
+
+
+/* About Section */
+
+.about h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+/* About */
+
+.about {
+    color: black;
+    margin-bottom: 50px;
+
+}
+
+.card-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card {
+    padding: 1.6rem;
+    flex: 1 1 25%;
+    max-width: 190px;
+    text-align: center;
+}
+
+.card .bx {
+    font-size: 8rem;
+    /* border: blue 1px solid; */
+    /* border-radius: 5px; */
+}
+
+.card p {
+    font-size: 1.5rem;
+}
+
+/* Quote */
+
+.quote {
+    background-color: #e5e7eb;
+    margin-bottom: 35px;
+
+}
+
+
+.quote-text {
+    color: #1f2937;
+    font-size: 2.25rem;
+    font-style: italic;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+.quote-text blockquote{
+
+padding-left: 50px;
+padding-right: 50px;
+}
+
+
+.quote-text p {
+    /* text-align: right; */
+    padding-right: 50px;
+}
+cite{
+    display: block;
+    text-align: end;
+    font-style: normal;
+    font-weight: 600;
+    padding-right: 50px;
+    
+}
+
+
+/* Call to Action */
+
+.cta-left {
+color: white;
+
+   
+}
+
+.cta-right {
+  align-self: center;
+  justify-self: end;
+
+}
+
+.cta-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #3882f6;
+    border-radius: 5px;
+    margin-bottom: 35px;
+ padding: 50px 100px;
+}
+
+
+.btn-cta{
+background-color: none;
+border: white solid 1px;
+border-radius: 5px;
+text-align: center;
+color: white;
+padding: 0.75rem 1.5rem;
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+    background: #1f2937;
+    color: #f9faf8;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+footer .bx-copyright {
+    /* font-size: 1.5rem; */
+}
