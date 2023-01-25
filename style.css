@@ -159,7 +159,7 @@ nav ul li a:hover {
 .card {
     padding: 1.6rem;
     flex: 1 1 25%;
-    max-width: 11.875;
+    max-width: 180px;
     text-align: center;
     flex-shrink: 1;
 }
