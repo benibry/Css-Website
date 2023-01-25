@@ -159,7 +159,7 @@ nav ul li a:hover {
 .card {
     padding: 1.6rem;
     flex: 1 1 25%;
-    max-width: 180px;
+    max-width: 11.25rem;
     text-align: center;
     flex-shrink: 1;
 }
@@ -272,9 +272,8 @@ footer {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
-    /* padding-block: 2rem;  */
-    /* width: min(95%, 70rem); */
     margin-inline: auto;
+    margin-bottom: 1.5rem;
 }
 
 .testimonial {
