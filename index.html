@@ -6,81 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Club</title>
-    <link rel="icon" href="./images/beans.png">
+
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <h1><a href="#">Coffee Club</a></h1>
-                </div>
-                <ul>
-                    <li><a href="./pages/menu.html">Menu</a></li>
-                    <li><a href="./pages/about.html">About</a></li>
-                    <li><a href="./pages/testimonials.html">Testimonials</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <a href="#">Coffee Club</a>
         </div>
-        <div class="container">
-            <div class="header-container">
-                <div class="header-content-left">
-                    <h1>The Coffee Club</h1>
-                    <p> We Roast Our Coffee Onsite, To Bring You The Best Tasting Coffee Ever!</p>
-                    <div class="btn">Sign Up</div>
-                </div>
-                <div class="header-content-right">
-                    <img src="./images/Coffee-shop-logo-on-transparent-background-PNG.png" alt="Barista pouring coffee">
-                </div>
-            </div>
-        </div>
+        <nav>
+            <a href="./pages/menu.html">Menu</a>
+            <a href="./pages/about.html">About</a>
+            <a href="./pages/testimonials.html">Testimonials</a>
+        </nav>
     </header>
-    <section class="about">
-        <div class="narrow-container">
+    <main>
+        <section class="header-container">
+            <div class="header-content-left">
+                <h1>The Coffee Club</h1>
+                <p> We Roast Our Coffee Onsite, To Bring You The Best Tasting Coffee Ever!</p>
+                <div class="btn">Sign Up</div>
+            </div>
+            <div class="header-content-right">
+                <img src="./images/Coffee-shop-logo-on-transparent-background-PNG.png" alt="Barista pouring coffee">
+            </div>
+        </section>
+        <section class="about">
             <h2>Our Services</h2>
             <div class="card-list">
-                <div class="card">
+                <figure class="card">
                     <img src="./images/coffee-location.png" alt="location arrow" class="card-img">
-                    <p>Locally Sourced Coffee</p>
-                </div>
-                <div class="card">
+                    <figcaption>Locally Sourced Coffee</figcaption>
+                </figure>
+                <figure class="card">
                     <img src="./images/dine-in.png" alt="table with cups on top" class="card-img">
-                    <p>Dine in</p>
-                </div>
-                <div class="card">
+                    <figcaption>Dine in</figcaption>
+                </figure>
+                <figure class="card">
                     <img src="./images/coffee-cup-takeaway.png" alt="Takeaway Cup" class="card-img">
-                    <p>Takeaway</p>
-                </div>
-                <div class="card">
+                    <figcaption>Takeaway</figcaption>
+                </figure>
+                <figure class="card">
                     <img src="./images/cake.png" alt="A cake" class="card-img">
-                    <p>Freshly Prepared Pastries</p>
-                </div>
+                    <figcaption>Freshly Prepared Pastries</figcaption>
+                </figure>
             </div>
-        </div>
-    </section>
-    <section class="quote">
-        <div class="narrow-container">
+        </section>
+        <section class="quote">
             <div class="quote-text">
                 <blockquote>“I was taken by the power that savoring a simple cup of coffee can have to connect people
                     and create community.”</blockquote>
                 <cite> - Howard Schultz</cite>
             </div>
+        </section>
+        <div class="cta-left">
+            <h2>Coffee Club</h2>
+            <p>Sign up to recieve our latest news!</p>
         </div>
-    </section>
-    <div class="container">
-        <aside class="cta-container">
-            <div class="cta-left">
-                <h2>Coffee Club</h2>
-                <p>Sign up to recieve our latest news!</p>
-            </div>
-            <div class="cta-right">
-                <div class="btn-cta"><a href="#">Sign Up</a></div>
-            </div>
-        </aside>
-    </div>
+        <div class="cta-right">
+            <div class="btn-cta"><a href="#">Sign Up</a></div>
+        </div>
+    </main>
     <footer>
         <a href="#" class="to-top"><i class='bx bx-chevrons-up'></i></a>
         <p>Copyright <i class='bx bx-copyright'></i></p>
