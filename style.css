@@ -38,6 +38,12 @@ a {
 header {
     background: #1f2937;
     padding-top: 1.5rem;
+    display: flex;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .logo a {
@@ -51,30 +57,14 @@ header {
     transition: .5s ease-in-out;
 }
 
-nav {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    display: inline-block;
-    margin-left: 1rem;
-}
-
-nav ul {
-    /* list-style-type: none; */
-}
-
-nav li {
-    /* display: inline-block; */
-    /* margin-left: 1rem; */
-}
-
 nav a {
 
     color: #e5e7eb;
     font-size: 1.125rem;
+    margin-left: 1rem;
 }
 
-nav ul li a:hover {
+nav a:hover {
     color: #3882f6;
     transition: .5s ease-in-out;
 }
@@ -89,6 +79,7 @@ nav ul li a:hover {
     align-items: center;
     padding-left: 4rem;
     padding-right: 4rem;
+    background-color: #1f2937;
 }
 
 @media screen and (max-width:655px) {
@@ -246,14 +237,11 @@ h2 {
     grid-template-columns: 1fr 1fr;
     background: #3882f6;
     border-radius: 5px;
-    margin-bottom: 2.188rem;
-    padding: 3.125rem 6.25rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    max-width: 1228px;
+    margin-bottom: 2.25rem;
+    max-width: 1008px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2.25rem;
+    padding: 4rem;
 }
 
 
@@ -277,6 +265,7 @@ h2 {
     color: #f9faf8;
     padding: 0.75rem 1.5rem;
     cursor: pointer;
+    margin-right: 5rem;
 
 }
 
