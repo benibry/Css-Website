@@ -52,19 +52,20 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    display: inline-block;
+    margin-left: 1rem;
 }
 
 nav ul {
-    list-style-type: none;
+    /* list-style-type: none; */
 }
 
 nav li {
-    display: inline-block;
-    margin-left: 1rem;
+    /* display: inline-block; */
+    /* margin-left: 1rem; */
 }
 
 nav a {
@@ -86,6 +87,8 @@ nav ul li a:hover {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
     align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 @media screen and (max-width:655px) {
@@ -189,6 +192,12 @@ nav ul li a:hover {
 
 .quote {
     background-color: #e5e7eb;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 1008px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.25rem;
 }
 
 .quote-text {
@@ -239,7 +248,14 @@ h2 {
     border-radius: 5px;
     margin-bottom: 2.188rem;
     padding: 3.125rem 6.25rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 1228px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.25rem;
 }
+
 
 @media screen and (max-width:555px) {
     .cta-container {
