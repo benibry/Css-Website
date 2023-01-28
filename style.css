@@ -61,11 +61,13 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul,
-li,
-a {
+nav li {
     display: inline-block;
     margin-left: 1rem;
+}
+
+nav a {
+
     color: #e5e7eb;
     font-size: 1.125rem;
 }
@@ -128,8 +130,9 @@ nav ul li a:hover {
     border-radius: 0.313rem;
     cursor: pointer;
     display: inline-block;
-    justify-self: flex-start;
 }
+
+
 
 .btn:hover {
     background-color: #e5e7eb;
