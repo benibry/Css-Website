@@ -31,13 +31,11 @@ a {
     margin-right: auto;
 }
 
-
-
 /* Nav */
 
 header {
     background: #1f2937;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2.25rem;
     padding-top: 1.5rem;
 }
 
@@ -56,7 +54,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 nav ul {
@@ -82,6 +79,13 @@ nav ul li a:hover {
     padding-bottom: 3.75rem;
     align-items: center;
 }
+
+@media screen and (max-width:655px){
+    .header-container{
+        flex-direction: column;
+    }
+}
+
 
 .header-content-left {
     flex-basis: 50%;
@@ -119,10 +123,10 @@ nav ul li a:hover {
     border: none;
     border-radius: 0.313rem;
     cursor: pointer;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     display: inline-block;
     justify-self: flex-start;
-    font-family: "Poppins";
+    /* font-family: "Poppins"; */
 }
 
 .btn:hover {
@@ -145,7 +149,7 @@ nav ul li a:hover {
 
 .about {
     color: black;
-    margin-bottom: 3.125rem;
+    margin-bottom: 2.25rem;
 
 }
 
@@ -161,7 +165,7 @@ nav ul li a:hover {
     flex: 1 1 25%;
     max-width: 11.25rem;
     text-align: center;
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
 }
 
 .card .bx {
@@ -182,7 +186,7 @@ nav ul li a:hover {
 
 .quote {
     background-color: #e5e7eb;
-    margin-bottom: 2.188rem;
+    margin-bottom: 2.25rem;
 }
 
 .quote-text {
@@ -215,7 +219,7 @@ cite {
 
 /* Call to Action */
 
-.cta-left {
+.cta-left p, h2 {
     color: #f9faf8;
 }
 
@@ -234,6 +238,16 @@ cite {
     padding: 3.125rem 6.25rem;
 }
 
+@media  screen and (max-width:555px) {
+    .cta-container{
+        grid-template-columns: 1fr;
+        align-content: center;
+    }
+    .cta-right{
+        justify-self: auto;
+    }
+}
+
 
 .btn-cta {
     background-color: #3882f6;
@@ -242,7 +256,7 @@ cite {
     text-align: center;
     color: #f9faf8;
     padding: 0.75rem 1.5rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     cursor: pointer;
 
 }
@@ -251,13 +265,17 @@ cite {
 
 footer {
     background: #1f2937;
-    color: #f9faf8;
+    /* color: #f9faf8; */
     text-align: center;
     font-size: 1.5rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-
 }
+
+footer p{
+    color: #f9faf8;
+}
+
 
 
 /* Testimonials */
@@ -271,56 +289,36 @@ footer {
 .testimonial-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, 20rem);
     margin-inline: auto;
     margin-bottom: 1.5rem;
+    justify-content: center;
 }
+
 
 .testimonial {
     font-size: 1rem;
     padding: 2rem;
     border-radius: 0.5rem;
     color: #1f2937;
-}
-
-.test-1 {
-    background-color: #e5e7eb;
-    grid-column: 1 / 4;
-}
-
-.test-2 {
-    background-color: #e5e7eb;
-
-}
-
-.test-3 {
-    background-color: #e5e7eb;
-    grid-column: 1 / 3;
-}
-
-.test-4 {
-    background-color: #e5e7eb;
-
-}
-
-.test-5 {
     background-color: #e5e7eb;
 }
 
 .testimonial .test-img {
-    width: 5rem;
+    width: 4rem;
     aspect-ratio: 1;
     border-radius: 50%;
 }
 
 .testimonial .name {
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 400;
     line-height: 1;
+    color: #1f2937;
 }
 
 .testimonial .position {
-    font-size: 25px;
+    font-size: 1.25rem;
     opacity: 0.5;
 }
 
@@ -328,15 +326,17 @@ footer {
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit , 20rem);
     gap: 2rem;
+    margin-bottom: 1.25rem;
+    justify-content: center;
 
 }
 
 .menu-section {
     background-color: #e5e7eb;
-    color: #1f2937;
-    border-radius: 10px;
+    border-radius: 0.625rem;
+    padding: 1.25rem;
 }
 
 .menu-section {
@@ -346,4 +346,36 @@ footer {
 .menu-section p,
 h4 {
     text-align: left;
+    font-size: 12px;
+}
+
+.menu-section p {
+    font-size: 0.625rem;
+    color: #1f2937;
+}
+
+.menu-section h2 {
+    color: #1f2937;
+}
+
+/* About */
+
+.about-us-text{
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-us-text h2, p{
+    color: #1f2937;
+}
+
+.about-us-text p{
+    font-size: 2.25rem;
+}
+
+.about-us-text h2{
+    text-align: center;
+    font-size: 2.25rem;
 }
