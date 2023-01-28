@@ -12,7 +12,6 @@ body {
 
 a {
     text-decoration: none;
-    color: #e5e7eb;
 }
 
 .container {
@@ -40,7 +39,7 @@ header {
     padding-top: 1.5rem;
 }
 
-.logo h1 {
+.logo a {
     font-size: 1.5rem;
     color: #f9faf8;
     margin: 0;
@@ -55,16 +54,20 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 nav ul {
     list-style-type: none;
 }
 
-nav ul li {
+nav ul,
+li,
+a {
     display: inline-block;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
+    color: #e5e7eb;
+    font-size: 1.125rem;
 }
 
 nav ul li a:hover {
@@ -82,12 +85,11 @@ nav ul li a:hover {
     align-items: center;
 }
 
-@media screen and (max-width:655px){
-    .header-container{
+@media screen and (max-width:655px) {
+    .header-container {
         flex-direction: column;
     }
 }
-
 
 .header-content-left {
     flex-basis: 50%;
@@ -215,7 +217,8 @@ cite {
 
 /* Call to Action */
 
-.cta-left p, h2 {
+.cta-left p,
+h2 {
     color: #f9faf8;
 }
 
@@ -234,12 +237,13 @@ cite {
     padding: 3.125rem 6.25rem;
 }
 
-@media  screen and (max-width:555px) {
-    .cta-container{
+@media screen and (max-width:555px) {
+    .cta-container {
         grid-template-columns: 1fr;
         justify-content: center;
     }
-    .cta-right{
+
+    .cta-right {
         justify-self: auto;
     }
 }
@@ -266,7 +270,7 @@ footer {
     padding-bottom: 1.5rem;
 }
 
-footer p{
+footer p {
     color: #f9faf8;
 }
 
@@ -320,7 +324,7 @@ footer p{
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit , 20rem);
+    grid-template-columns: repeat(auto-fit, 20rem);
     gap: 2rem;
     justify-content: center;
 }
@@ -352,22 +356,23 @@ h4 {
 
 /* About us */
 
-.about-us-text{
+.about-us-text {
     background-color: #e5e7eb;
     border-radius: 10px;
     padding: 2rem;
     margin-bottom: 1.5rem;
 }
 
-.about-us-text h2, p{
+.about-us-text h2,
+p {
     color: #1f2937;
 }
 
-.about-us-text p{
+.about-us-text p {
     font-size: 1.5rem;
 }
 
-.about-us-text h2{
+.about-us-text h2 {
     text-align: center;
     font-size: 2.25rem;
 }
